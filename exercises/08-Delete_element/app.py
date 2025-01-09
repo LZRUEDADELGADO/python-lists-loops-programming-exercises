@@ -1,11 +1,11 @@
-people = ['juan','ana','michelle','daniella','stefany','lucy','barak']
+people = ['juan', 'ana', 'michelle', 'daniella', 'stefany', 'lucy', 'barak']
 
 def delete_person(person_name):
-    # Your code here
     
+    new_list = [person for person in people if person != person_name]
+    return new_list
 
-    
-# Don't delete anything below
-print(delete_person("daniella"))
-print(delete_person("juan"))
-print(delete_person("emilio"))
+
+print(delete_person("daniella"))  
+print(delete_person("juan"))  
+print(delete_person("emilio")) 

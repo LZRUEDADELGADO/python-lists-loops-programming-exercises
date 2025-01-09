@@ -1,5 +1,9 @@
-my_numbers = [23,234,345,4356234,243,43,56,2]
+celsius_values = [-2, 34, 56, -10]
 
-# Your code here
+def celsius_to_fahrenheit(celsius):
+    
+    return (celsius * 9/5) + 32
 
-print(new_list)
+result = list(map(celsius_to_fahrenheit, celsius_values))
+
+print(result)
